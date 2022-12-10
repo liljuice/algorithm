@@ -24,7 +24,7 @@ def dijkstra():
       cost = dist[node] + nextNode[1]
       if cost < dist[nextNode[0]]:
         dist[nextNode[0]] = cost
-        hq.heappush(queue, (cost, nextNode[0])) # 중요 : cost를 기준으로 heapq를 구성해야함!!
+        hq.heappush(queue, (cost, nextNode[0])) # 중요 : cost를 기준으로 heapq를 구성해야함!! 최소 힙에서 cost가 낮은걸 먼저 pop해줘야 21~22 line으로 시간을 줄여준다.
 
 dijkstra()
 
