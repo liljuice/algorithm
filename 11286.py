@@ -24,3 +24,9 @@ for _ in range(n):
         print(-1 * hq.heappop(neg))
       else:
         print(hq.heappop(pos))
+
+"""
+tuple을 push하는 방법도 있다.
+hq.heappush(queue, (abs(com), com)) # 절댓값 기준으로 정렬하고
+print(hq.heappop(queue)[1]) # 원래값을 출력한다.
+"""
